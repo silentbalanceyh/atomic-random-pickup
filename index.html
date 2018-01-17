@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+<META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>抽奖程序</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+<div class="container">
+    <input id="hdSelect" type="hidden"/>
+    <div class="jumbotron">
+        <h3>你好，欢迎光临抽奖系统！</h3>
+        <p>操作基本按键：</p>
+        <p>&nbsp;&nbsp;1.开始抽奖&停止：敲击空白执行</p>
+        <p>&nbsp;&nbsp;2.清空抽奖记录："Esc键"或者"回退<-"</p>
+    </div>
+    <div class="col-sm-2 alert-info" style="padding-bottom:30px;">
+        <div class="page-header">
+            已经抽取列表
+        </div>
+        <ui id="lstPicked" class="list-group">
+        </ui>
+    </div>
+    <div class="col-sm-10">
+        <div class="content-title">
+            <div class="col-sm-12">
+                <button class="btn btn-primary" id="btnStart" onclick="onStart()">开始抽奖</button>
+                <button class="btn btn-danger" id="btnEnd" onclick="onEnd()">停止</button>
+                <button class="btn btn-default" id="btnClear" onclick="onClear()">重新开始（Esc）</button>
+            </div>
+        </div>
+        <div class="content" id="txtContent">
+            Ready
+        </div>
+    </div>
+    <div class="col-sm-12" style="text-align:center;">
+        <hr>
+        Copyright: &#169; 重庆市马家堡小学<br/>
+        制作人：<a href="mailto:silentbalanceyh@126.com">silentbalanceyh@126.com</a>&nbsp;&nbsp;
+        WebSite: <a href="http://www.vertxup.cn">http://www.vertxup.cn</a>
+    </div>
+</div>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
