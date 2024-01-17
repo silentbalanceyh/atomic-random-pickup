@@ -188,6 +188,7 @@ var picked = {};
 var stop = true;
 function onClear() {
     localStorage.removeItem("ITEM");
+    readItem();
 }
 function addItem(number){
     var existing = localStorage.getItem("ITEM");
@@ -252,7 +253,6 @@ $(function(){
         if(27 === code || 8 === code){
             console.info(code);
             onClear();
-            readItem();
         }
         // Space
         if(32 === code){
